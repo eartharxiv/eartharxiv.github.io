@@ -15,11 +15,11 @@
 		<meta charset="utf-8">
 		<title>EarthArXiv</title>
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
+		<!-- Latest compiled and minified CSS - FLATLY theme -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+lmTKXkS+c9d34U9obDdGOZT7zqFicJDkhckYYsW7oenXR37T2OEV4uqfUO45M87" crossorigin="anonymous">
+		
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
 		
 		<style>
 		
@@ -31,18 +31,6 @@
 				height: 250px; 
 			}
 
-			.navbar-nav {
-    			float:none;
-   				margin: auto;
-    			/* vertical menu */
-    			/* display: block; */
-    			text-align: center;
-			}
-
-			.navbar .active { background: #cacdd1; }
-
-                        .text { padding-top: 25px; }
-
 		</style>
 	</head>
 
@@ -50,13 +38,20 @@
 		<img class="main_logo" src="wide_color.png" alt="EarthArXiv Logo"><br/>
 		
 		<div class="container">
+		
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="resources.html">Resources</a></li>
+			<li class="breadcrumb-item active">Google Scholar</li>
+		</ol>
 
-			<p>Within Google Scholar you can restrict your search to EarthArXiv by using<br/><br/> 
-				site:https://osf.io/preprints/eartharxiv * <br/><br/>
-				In this example, the * means “any paper from the site https://osf.io/preprints/eartharxiv” so you’d get all Google Scholar papers that originated from EarthArXiv. Alternatively, you could replace the * with other search text such as <br/><br/> site:https://osf.io/preprints/eartharxiv earthquake <br/><br/>
-				to find all EarthArXiv papers on Google Scholar with earthquake in the title or text.</p>
+			<p>Within Google Scholar you can restrict your search to EarthArXiv by inputting <code>site:https://osf.io/preprints/eartharxiv * </code> into the search box. In this example, the <code>*</code> means "any paper from the site https://osf.io/preprints/eartharxiv" so you’d get all Google Scholar papers that originated from EarthArXiv. Alternatively, you could replace the <code>*</code> with other search text such as <code>site:https://osf.io/preprints/eartharxiv earthquake</code> to find all EarthArXiv papers on Google Scholar with earthquake in the title or text.</p>
 
-			<p>Another interesting search is to use eartharxiv in quotes. “eartharxiv” forces the search to use only eartharxiv and not look for partial matches like ‘arxiv’ and ‘earth’. Although, this search will show results originating from other sites and won’t limit the results to those originating from https://osf.io/preprints/eartharxiv. However, it is an interesting compliment to the query above as it will show papers from other repositories that contain the text “eartharxiv”.</p>
+			<p>Another interesting search is to use EarthArXiv in quotes. "eartharxiv" forces the search to use only 'eartharxiv' and not look for partial matches like 'arxiv' and 'earth'. However, this search will show results originating from other sites and won’t limit the results to those originating from https://osf.io/preprints/eartharxiv. It is an interesting compliment to the query above as it will show papers from other repositories that contain the text “eartharxiv”.</p>
+
+		<footer id="footer">
+			<hr/>
+			<p><a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/2.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution 2.0 International License</a>. Contact email: <a href="mailto:">something at something dot com</a>. Source code can found at <a href="https://github.com/EarthArXiv/eartharxiv.github.io">EarthArXiv/eartharxiv.github.io</a>. Based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Theme is <a href="https://bootswatch.com/flatly/">Flatly</a> from <a href="https://bootswatch.com/">Bootswatch</a>.</p>
+		</footer> 	
 
 		</div>
 	</body>

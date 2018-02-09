@@ -16,33 +16,35 @@
 		<meta charset="utf-8">
 		<title>EarthArXiv</title>
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
+		<!-- Latest compiled and minified CSS - FLATLY theme -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+lmTKXkS+c9d34U9obDdGOZT7zqFicJDkhckYYsW7oenXR37T2OEV4uqfUO45M87" crossorigin="anonymous">
+		
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
+		
 		<style>
-
-			.main_logo {
-				display: block;
-				margin-right: auto;
-				margin-left: auto;
-				width: 700px;
-				height: 250px;
+		
+			.main_logo { 
+				display: block; 
+				margin-right: auto; 
+				margin-left: auto; 
+				width: 700px; 
+				height: 250px; 
 			}
-
+      
+      .nav-item {
+			 padding-left:1em;
+			 padding-right:1em;
+			}
+			
+			.nav-link {
+			 font-size:1.4em;
+			}
 			.navbar-nav {
     			float:none;
    				margin: auto;
-    			/* vertical menu */
-    			/* display: block; */
     			text-align: center;
 			}
-
-			.navbar .active { background: #cacdd1; }
-
-                        .text { padding-top: 25px; }
 
 		</style>
 	</head>
@@ -51,39 +53,42 @@
 		<img class="main_logo" src="wide_color.png" alt="EarthArXiv Logo"><br/>
 
 		<div class="container">
+			
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto">
+					 <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        	 <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+           <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+      			<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      			<li class="nav-item"><a class="nav-link" href="diversity_statement.html">Diversity Statement</a></li>
+				</ul>
+			</div>
+		</nav>
 
-  				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    				<ul class="navbar-nav mr-auto">
-      					<li class="nav-item active">
-        					<a class="nav-link" href="index.html">Home
-        					<span class="sr-only">(current)</span></a>
-      					</li>
-      					<li class="nav-item">
-        					<a class="nav-link" href="faq.html">FAQ</a>
-      					</li>
-      					<li class="nav-item">
-        					<a class="nav-link" href="resources.html">Resources</a>
-      					</li>
-      					<li class="nav-item">
-        					<a class="nav-link" href="blog.html">Blog</a>
-      					</li>
-      					<li class="nav-item">
-        					<a class="nav-link" href="diversity_statement.html">Diversity Statement</a>
-      					</li>
-  				</div>
-
-			</nav>
-
-			<p class="text">This is a companion site to the <a href="http://eartharxiv.org">EarthArXiv</a> preprint system. Not sure what a preprint is? Then, check out our <a href="faq.html">Frequently Asked Questions</a> page. In addition to the FAQ, this site contains community resources and our EarthArXiv preprint blog.</p>
+			<p style="padding-top:1em;">This is a companion site to the <a href="http://eartharxiv.org">EarthArXiv</a> preprint system. Not sure what a preprint is? Then, check out our <a href="faq.html">Frequently Asked Questions</a> page. In addition to the FAQ, this site contains community resources and our EarthArXiv preprint blog.</p>
 
 			<p>Capturing a broad spectrum of interest and experience will help EarthArXiv consider and include the full geoscience community. An essential step to achieving this objective is to ensure broad and intersectional diversity in staffing our Advisory Council.</p>
 
 			<p>As EarthArXiv came to fruition roughly 125 individuals volunteered to help out. We are grateful for such overwhelming support. Our initial Advisory Council was selected from this set of 125 volunteers with the above objectives in mind and these individuals will serve a 2-year term. The current Advisory Council is always prominently displayed on our <a href="http://eartharxiv.org">preprint submission site</a>. We also encourage you to read our <a href="diversity_statement.html">Diversity Statement</a>.</p>
 
-			<p>The EarthArXiv community is supported by:</p>
-			<a href="http://esipfed.org/"><img src="ESIP-logo.png" title="Earth Science Information Partners" width="400" height="200" align="left" /></a> <a href="http://cos.io/"><img src="Cos-square-logo.png" title="Center for Open Science" width="350" height="200" align="right" /></a> 
+			<p>The EarthArXiv community is supported by:</p>			
+			<div style="float:left; width:50%">
+				<a href="http://esipfed.org/"><img src="ESIP-logo.png" title="Earth Science Information Partners" width="400" height="200"/></a>
+			</div>
+					
+			<div style="float:right; width:50%">
+				<a href="http://cos.io/"><img src="Cos-square-logo.png" title="Center for Open Science" width="350" height="200"/></a> 
+			</div> &nbsp;
+
+		<footer id="footer">
+			<hr/>
+			<p><a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/2.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution 2.0 International License</a>. Contact email: <a href="mailto:">something at something dot com</a>. Source code can found at <a href="https://github.com/EarthArXiv/eartharxiv.github.io">EarthArXiv/eartharxiv.github.io</a>. Based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Theme is <a href="https://bootswatch.com/flatly/">Flatly</a> from <a href="https://bootswatch.com/">Bootswatch</a>.</p>
+		</footer> 
 
 		</div>
 	</body>
