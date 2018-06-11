@@ -1,0 +1,141 @@
+<html>
+	<head>
+
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101488706-2"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+			gtag('config', 'UA-101488706-2');
+		</script>
+
+		<meta charset="utf-8">
+		<title>EarthArXiv</title>
+
+		<!-- Latest compiled and minified CSS - FLATLY theme -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+lmTKXkS+c9d34U9obDdGOZT7zqFicJDkhckYYsW7oenXR37T2OEV4uqfUO45M87" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
+		
+		<style>
+			.center_bold { text-align:center; font-weight:bold; }
+			.bold { font-weight:bold; }
+			.italics { font-style:italic; }
+			.row { display: flex; }
+			.column {
+  				flex: 50%;
+  				padding: 5px;
+			}
+			.main_logo { 
+				display: block; 
+				margin-right: auto; 
+				margin-left: auto; 
+				width: 300px; 
+				height: 125px; 
+			}
+			.navbar-nav {
+    			float:none;
+   				margin: auto;
+    			text-align: center;
+			}	
+			.nav-item {
+				padding-left:1em;
+			 	padding-right:1em;
+			}	
+			.nav-link { font-size:1.4em; }	
+			.navbar-nav {
+    			float:none;
+   				margin: auto;
+    			text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<img class="main_logo" src="../../wide_color.png" alt="EarthArXiv Logo"><hr/>
+
+		<div class="container">
+
+			<h2 class="center_bold">What Do 400 Earth Science Preprints Sound Like?</h2>
+			<h4 style="text-align:center;"><a href="https://twitter.com/tnarock">Tom Narock</a>, June 11, 2018<br/><br/><br/>
+
+			<h3 class="bold">We owe our early success to you!</h3>
+
+			<p><a href="https://twitter.com/BeckyCoats/status/977503444306157568"><img width="275" height="275" align="right" src="Becky_Coats_on_Twitter.png"></a><a href="http://eartharxiv.org">EarthArXiv</a> is turning 8 months old. Honestly, when we officially launched back in October 2017 we weren't sure how long it would take to become sustainable, if at all. Yet, as we approach the one year mark we've already recieved 400 submissions and have gotten large parts of the Earth science community to begin thinking differently about preprints and open science. And that's all thanks to you! If you've contributed a paper, signed on as a Community Ambassador, mentioned EarthArXiv to colleagues, or proudly displayed your EarthArXiv sticker, then you've helped get us to this point. And we'd like to say a big Thank You!</p><br/>
+
+			<p>We'd like to look back and acknowledge all of the open science that's taken place. We can do that with some basic charts. For example, Figures 1 and 2 show the weekly submissions and cumulative EarthArXiv submissions, respectively.<br/><br/>
+
+			<div class="row">
+  				<div class="column">
+    				<figure>
+  						<img width=500 height=300 src="submissions_per_week.png" style="width:100%">
+  						<figcaption>Figure 1. EarthArXiv Submissions Per Week</figcaption>
+					</figure>
+  				</div>
+  				<div class="column">
+    				<figure>
+  						<img width=500 height=300 src="cumulative_submissions.png" style="width:100%">
+  						<figcaption>Figure 2. Cumulative EarthArXiv Submissions</figcaption>
+					</figure>
+  				</div>
+			</div>
+		
+		
+			<p>However, we wanted to try something different. Look at the data in a new way. Maybe even <span class="italics bold">listen</span> to all that open science. For that, we need to turn to sonification.</p>
+
+			<h3>Soni-What?!?</h3>
+
+			<p>Sonification is the process of turning nonauditory data into sound. The process itself has been around for some time (<a href="https://www.jstor.org/stable/734136?seq=1#page_scan_tab_contents">Hedges, 1978</a>) and experimental results (<a href="https://www.researchgate.net/publication/282504359_Listen_to_the_Sound_of_Data">Last and Usyskin 2015</a>) have shown the scientific utility of sonification. Untrained listeners (those with no formal training in music) are able to make useful distinctions in the data. Listeners could easily apply exploration tasks such as classification and clustering to sonified data. However, we're not looking to do any analysis. We just want to have some fun with our usage data!</p>
+
+			<h3>Data Sets and Open Science</h3>
+
+			<p><a href="https://osf.io/">The Open Science Framework</a>, on which EarthArXiv is built, has a freely available <a href="https://developer.osf.io/">application programming interface (API)</a>. In general terms, this is a set of clearly defined methods of communication by which anyone can write software to query OSF systems. That's right, EarthArXiv (and all of the Center for Open Science preprint systems) is open all the way down. Not only can you freely publish and share science, but you can also freely and openly query the system via community developed tools. We've begun an initial <a href="https://github.com/eartharxiv/API">open software library</a> if you're interest.</p>
+
+			<p>Using this software library we queried EarthArXiv for the publication dates of all its preprints. These data were combined to determine the number of papers submitted each week from inception until the present. This is how we generated Figures 1 and 2 above. From there, we used more open tools to sonify the data.</p>
+
+			<p>There are two components to sonification. The first is algorithmic in that we need to map our data to the range of musical notes. The second component is more artistic where we can experiment with scales and note duration to make the sonified data sound a little more pleasing. We used version 3 of the <a href="http://musicalgorithms.org/3.0/index.html">MusicAlgorithms</a> site for our sonification.</p> 
+
+			<p>The first step in the process is to convert each data point into a pitch (musical note). MusicAlgorithm gives us the option of mapping our data onto the entire 88 pitches (notes) of a piano; however, the range of our data is not very large so we chose to constrain our music around middle C (the key that's roughly in the middle of a piano keyboard). The mapping process also determines the <a href="https://en.wikipedia.org/wiki/Musical_note#Written_notes">duration</a> of each note; e.g. whole note, half note, quarter note, etc. Finally, we’re asked to choose a musical scale for our sonified data. Scales are often associated with <a href="http://www.ethanhein.com/wp/2010/scales-and-emotions/">emotion</a> and musicians use different scales to convey feelings in their pieces. This is the point where I admit I'm a musical theory novice and just went with one of the most popular scales. I chose the C-major scale, which is happy and upbeat and seemed representative of this community. In the spirit of open science, I'm sharing all my data <a href="data.html">here</a> in case those more musically inclined would like to play with the mappings.</p>
+
+			<p>The output of MusicAlgorithms is a <a href="https://en.wikipedia.org/wiki/MIDI">MIDI file</a>, which is a technical standard for digitally encoding music and working with audio devices. This MIDI file is included in the above link and can also be imported into common music software, such as GarageBand, where we can assign various instruments to play the encoded music.</p>
+
+			<p>Here’s a classical music representation of the submission data played by a string ensemble.<br/>
+				<audio controls>
+  					<source src="EarthArXiv_strings_cmaj.mp3" type="audio/mpeg">
+					Your browser does not support playing this audio file. You can download it <a href="EarthArXiv_strings_cmaj.mp3">here</a>
+				</audio>
+			</p>
+
+			<p>Not a fan of classical music? Try this rock version. Here an electric guitar plays the submission data while drums accompany in the background.<br/>
+				<audio controls>
+  					<source src="EarthArXiv_rock.mp3" type="audio/mpeg">
+					Your browser does not support playing this audio file. You can download it <a href="EarthArXiv_strings_cmaj.mp3">here</a>
+				</audio>
+			</p>
+
+			<p>Finally, ever wonder what open science sounds like coming out of a cathedral organ? Probably not. Here you go anyway.<br/>
+				<audio controls>
+  					<source src="EarthArXiv_bass_organ.mp3" type="audio/mpeg">
+					Your browser does not support playing this audio file. You can download it <a href="EarthArXiv_strings_cmaj.mp3">here</a>
+				</audio>
+			</p>
+
+			<p>Would you like to be part of the music of open science? Join the open science discussions on social media (<a href="https://twitter.com/eartharxiv">Twitter</a> and <a href="https://www.facebook.com/eartharxiv">Facebook</a>), <a href="https://eartharxiv.org/">submit a preprint</a>, <a href="https://eartharxiv.github.io/resources.html">look over our resources</a> and share with your colleagues, or just <a href="https://eartharxiv.github.io/faq.html">learn more</a>.</p>
+
+			<p>And for all those who have submitted papers, tweeted about papers, and promoted EarthArXiv in various ways - Thank You! You're part of the power of open science and your efforts are reflected in the music. Rock on open science. Rock on.</p>
+
+			<h3>Additional References</h3>
+
+			<p>Want more sonification? Aside from the MusicAlgorithms website, there are sonification tools available for many popular programming languages. There's <a href="https://cran.r-project.org/web/packages/audiolyzR/index.html">audiolyzR</a> for R and <a href="https://github.com/cirlabs/miditime">miditime</a> for Python. I've also heard good things about <a href="https://sonic-pi.net/">Sonic Pi</a> although I've not had a chance to try it myself.</p>
+
+			<p>There's also <a href="https://www.kqed.org/science/1918660/listen-1200-years-of-earths-climate-transformed-into-sound">Climate Data Turned into Music</a>, our galaxy's rotation turned into <a href="https://www.sciencealert.com/milky-way-rotation-data-transcribed-as-jazz-music">blues music</a>, and this wonderful sonification of a university's <a href="https://soundcloud.com/laurasaurus5/checkouts">library checkouts</a></p>
+
+		</div>
+	</body>
+</html>
+
+
+
