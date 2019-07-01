@@ -72,7 +72,7 @@
 		</nav>
 
 				<h2 style="padding-top:20px;text-align:center">EarthArXiv Moderation and Terms of Use</h2>
-				<h4 style="padding-top:20px;text-align:center">Version 2.1 - March 8, 2019</h4><br/>
+				<h4 style="padding-top:20px;text-align:center">Version 2.2 - July 1, 2019</h4><br/>
 
 				<p>EarthArXiv publishes articles from all subdomains of Earth science and related domains of planetary science. We are not a journal and thus do not evaluate the scientific quality of a paper. However, we do have Terms of Use and a moderation policy to ensure the appropriate community standards are upheld, and that relevant material is hosted on the service; as a result, this may result in your paper being rejected. To ensure your submission will pass moderation, we strongly encourage you to review this document if you are interested in submitting to EarthArXiv.</p>
 
@@ -108,8 +108,20 @@
 					<li>Confirmatory studies</li>
 					<li>So-called ‘null’ results (i.e. results that do not support a hypothesis)</li>
 					<li>Dataset description papers</li>
+					<li>Software papers</li>
 				</ul>
  
+ 				<h4>A few notes on software papers</h4>
+
+				<p>EarthArXiv supports scientific software development by accepting software papers (e.g. preprints detailing new research software, models, or replication studies involving scientific software/numerical models). We recommend the following workflow for software papers that results in citable DOIs for both the software and the paper:</p>
+
+				<ol>
+ 					<li>Place your code in a repository and mint a DOI for the code. We have had success using Github+Zenodo. The workflow detailed at <a href="https://guides.github.com/activities/citable-code/">https://guides.github.com/activities/citable-code/
+ 					</a> explains how to mint individual DOIs for citing specific versions of the code as it evolves.</li>
+					<li>In your EarthArXiv submission make sure to cite the software DOI.</li>
+					<li>For those interested in continuing on to peer review, we recommend the <a href="https://joss.theoj.org/">Journal of Open Source Software</a>. Replications of previously published scientific research can also be submitted to <a href="https://rescience.github.io">(Re)Science</a>.</li> 
+				</ol>
+
 				<h3>What does EarthArXiv not accept?</h3>
  
 				<ul>
@@ -118,7 +130,6 @@
 					<li>Commentaries and opinion pieces (i.e. an article that predominantly reflects the author’s opinion or beliefs on a given subject, typically framed in a provocative or controversial manner). Exceptions may be made for editorials or op-eds solicited by a particular journal.</li>
 					<li>Posters (see <a href="https://www.essoar.org/">ESSOAr</a> as an alternative)</li>
 					<li>Theses and course projects (see <a href="http://www.thesiscommons.com">Thesis Commons</a> as an alternative)</li>
-					<li>Software articles (see <a href="#software">Appendix</a> for more details)</li>
 				</ul>
 
 				<h3>Publication and hosting of your paper</h3>
@@ -151,20 +162,6 @@
  					<li>If no agreement can be reached, then EarthArXiv will be forced to remove the preprint</li>
  				</ol>
 
-				<h3 style="padding-top:50px">Appendix</h3>
-
-				<a name="software"><h4 style="padding-top:25px">Software Papers</h4></a>
-
-				<p>EarthArXiv supports scientific software development and citation. Yet, software papers often follow citation standards that differ from research and data papers. Rather than use EarthArXiv, we suggest the following approach</p>
-
-				<ol>
-					<li>Place your code on GitHub</li>
-					<li>Go to Zenodo, which is a software DOI tool that tracks versions on GitHub. A new DOI is issued each time a new version of the software is released</li>
-					<li>Go to either Journal of Open Research Software or Journal of Open Source Software. Both journals encourage publication of high-level software overview reports</li>
-					<li>You will now have a citable “paper” detailing the software project at a high level plus individual DOIs for citing specific versions of the code as it evolves</li>
-					<li>If you really want a software paper on EarthArXiv such that Earth scientists can find it, then we recommend doing all the above plus writing up a short PDF with some Earth science examples showing off the utility. That EarthArXiv PDF would cite the Journal of Open Source Software report</li>
-				</ol>
- 
  		<footer id="footer">
 			<hr/>
 			<p><a rel="license" href="http://creativecommons.org/licenses/by/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/2.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution 2.0 International License</a>. Contact email: <a href="mailto:thomas.narock@goucher.edu">Tom Narock</a>. Source code can found at <a href="https://github.com/EarthArXiv/eartharxiv.github.io">our github page</a>. Based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Theme is <a href="https://bootswatch.com/flatly/">Flatly</a> from <a href="https://bootswatch.com/">Bootswatch</a>.</p>
