@@ -85,12 +85,12 @@
 					<li>At least one author must supply an email address for correspondence</li>
 					<li>Your paper clearly states that this is a non-peer reviewed preprint submitted to EarthArXiv, 
 					<span style="font-weight:bold;font-style:italic;">or</span> a post print of a published manuscript with the journal name and DOI clearly indicated. Authors have two options for supplying this information. 
-					<ol>
+					<ol><br/>
 						<li>Include a coversheet listing the title, authors (with affiliations and email addresses), and a brief statement indicating the paper is a non-peer reviewed preprint submitted to EarthArXiv. If the preprint was submitted to a journal for peer review this should also be included in the coversheet statement where authors should list the name of the journal. If the submission is a postprint the journal in which it is published and the DOI should be included in the coversheet statement.
-						</li>
+						</li><br/>
 						<li>Alternatively, authors may choose to include a header on each page of the submission indentifying the paper as a non-peer reviewed EarthArXiv preprint or as a postprint. The header statement should also include the journal the paper was published in (or is under review in) when applicable.
 						</li>
-					</ol>
+					</ol><br/>
  					<li>All EarthArXiv metadata must be provided. For example, all authors listed on the paper must appear in the metadata, and at least one keyword must be selected for indexing purposes.</li>
  					<li>The paper must be written in English, as we cannot guarantee moderation of the content of non-English 
  						manuscripts.</li>
@@ -113,13 +113,19 @@
  
  				<h4>A few notes on software papers</h4>
 
-				<p>EarthArXiv supports scientific software development by accepting software papers (e.g. preprints detailing new research software, models, or replication studies involving scientific software/numerical models). We recommend the following workflow for software papers that results in citable DOIs for both the software and the paper:</p>
-
+				<p>EarthArXiv supports scientific software development by accepting software papers (e.g. preprints detailing new research software, models, or replication studies involving scientific software/numerical models). We follow software paper guidelines <a href="https://joss.readthedocs.io/en/latest/submitting.html?utm_source=discussion_mailer&utm_medium=email&utm_campaign=new_comment#what-should-my-paper-contain">similar to the Journal of Open Source Software</a> and EarthArXiv recommends the following workflow that results in citable DOIs for both the software and the paper:</p>
 				<ol>
  					<li>Place your code in a repository and mint a DOI for the code. We have had success using Github+Zenodo. The workflow detailed at <a href="https://guides.github.com/activities/citable-code/">https://guides.github.com/activities/citable-code/
- 					</a> explains how to mint individual DOIs for citing specific versions of the code as it evolves.</li>
-					<li>In your EarthArXiv submission make sure to cite the software DOI.</li>
-					<li>For those interested in continuing on to peer review, we recommend the <a href="https://joss.theoj.org/">Journal of Open Source Software</a>. Replications of previously published scientific research can also be submitted to <a href="https://rescience.github.io">(Re)Science</a>.</li> 
+ 					</a> explains how to mint individual DOIs for citing specific versions of the code as it evolves.</li><br/>
+					<li>Your EarthArXiv software paper should include</li>
+						<ul>
+							<li>A list of all authors of the software and the same basic requirements mentioned above</li>
+							<li>An explanation of the software's purpose, functionality, and domain of use at a level for a non-specialist reader</li>
+							<li>A list of references that includes the software DOI and a link to the software archive</li>
+							<li>Mentions (where applicable) of projects using the software or publications enabled by the software</li>
+						</ul><br/>
+					<li>The software paper <b>should not</b> be solely documentation of API (Application Programming Interface) functionality. Such documentation should be outlined elsewhere with the EarthArXiv submission being a summary of purpose, functionality, and domain examples for non-specialist readers</li><br/>
+					<li>For those interested in continuing on to peer review of the software, we recommend the <a href="https://joss.theoj.org/">Journal of Open Source Software</a> for any software or <a href="https://ropensci.org/software-review/">ROpenSci</a> for R packages. Replications of previously published scientific research can also be submitted to <a href="https://rescience.github.io">(Re)Science</a>.</li> 
 				</ol>
 
 				<h3>What does EarthArXiv not accept?</h3>
